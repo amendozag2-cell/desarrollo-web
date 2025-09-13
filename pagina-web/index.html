@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechSolutions Pro - Soluciones Tecnológicas Innovadoras</title>
+    <link rel="stylesheet" href="styles/css/estilos_generales.css">
+    <link rel="stylesheet" href="styles/css/formulario.css">
+</head>
+<body>
+    <!-- Encabezado (Header) -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>TechSolutions Pro</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+                <div class="mobile-menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Presentación Principal -->
+    <section id="inicio" class="hero-section">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h2>Transformamos tu Negocio con Tecnología de Vanguardia</h2>
+                <p class="hero-description">Somos especialistas en desarrollo web, aplicaciones móviles y consultoría tecnológica. Ayudamos a empresas a digitalizar sus procesos y maximizar su potencial en el mundo digital.</p>
+                <div class="hero-buttons">
+                    <a href="#servicios" class="btn-primary">Nuestros Servicios</a>
+                    <a href="#contacto" class="btn-secondary">Contáctanos</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="tech-illustration"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Servicios Destacados -->
+    <section id="servicios" class="services-section">
+        <div class="container">
+            <h2>Nuestros Servicios Clave</h2>
+            <div class="services-grid">
+                <article class="service-card">
+                    <div class="service-icon">🌐</div>
+                    <h3>Desarrollo Web</h3>
+                    <p>Creamos sitios web responsive y aplicaciones web modernas utilizando las últimas tecnologías.</p>
+                </article>
+                <article class="service-card">
+                    <div class="service-icon">📱</div>
+                    <h3>Apps Móviles</h3>
+                    <p>Desarrollamos aplicaciones móviles nativas e híbridas para iOS y Android.</p>
+                </article>
+                <article class="service-card">
+                    <div class="service-icon">☁️</div>
+                    <h3>Soluciones Cloud</h3>
+                    <p>Implementamos infraestructura en la nube para optimizar recursos y escalabilidad.</p>
+                </article>
+                <article class="service-card">
+                    <div class="service-icon">🔒</div>
+                    <h3>Ciberseguridad</h3>
+                    <p>Protegemos tu información con sistemas de seguridad avanzados y auditorías.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Misión y Visión -->
+    <section id="nosotros" class="mission-vision-section">
+        <div class="container">
+            <div class="mission-vision-grid">
+                <div class="mission-card">
+                    <h2>Nuestra Misión</h2>
+                    <p>Empoderar a las empresas mediante soluciones tecnológicas innovadoras y personalizadas que impulsen su crecimiento digital y mejoren su competitividad en el mercado global.</p>
+                </div>
+                <div class="vision-card">
+                    <h2>Nuestra Visión</h2>
+                    <p>Ser la empresa líder en transformación digital en América Latina, reconocida por la excelencia técnica, la innovación constante y el impacto positivo en el éxito de nuestros clientes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulario de Contacto -->
+    <section id="contacto" class="contact-section">
+        <div class="container">
+            <h2>Contáctanos</h2>
+            <p>¿Listo para transformar tu negocio? Escríbenos y te contactaremos en menos de 24 horas.</p>
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <label for="nombre">Nombre Completo *</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                    <span class="error-message" id="error-nombre"></span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Correo Electrónico *</label>
+                    <input type="email" id="email" name="email" required>
+                    <span class="error-message" id="error-email"></span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" id="telefono" name="telefono">
+                    <span class="error-message" id="error-telefono"></span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="empresa">Empresa</label>
+                    <input type="text" id="empresa" name="empresa">
+                </div>
+                
+                <div class="form-group">
+                    <label for="servicio">Servicio de Interés</label>
+                    <select id="servicio" name="servicio">
+                        <option value="">Selecciona un servicio</option>
+                        <option value="desarrollo-web">Desarrollo Web</option>
+                        <option value="apps-moviles">Aplicaciones Móviles</option>
+                        <option value="soluciones-cloud">Soluciones Cloud</option>
+                        <option value="ciberseguridad">Ciberseguridad</option>
+                        <option value="consultoria">Consultoría General</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="mensaje">Mensaje *</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" placeholder="Cuéntanos sobre tu proyecto..." required></textarea>
+                    <span class="error-message" id="error-mensaje"></span>
+                </div>
+                
+                <button type="submit" class="submit-btn">
+                    <span class="btn-text">Enviar Mensaje</span>
+                    <span class="btn-loader" style="display: none;">Enviando...</span>
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Pie de página (Footer) -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>TechSolutions Pro</h3>
+                    <p>Transformando negocios a través de la tecnología desde 2020.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Servicios</h4>
+                    <ul>
+                        <li><a href="#servicios">Desarrollo Web</a></li>
+                        <li><a href="#servicios">Apps Móviles</a></li>
+                        <li><a href="#servicios">Soluciones Cloud</a></li>
+                        <li><a href="#servicios">Ciberseguridad</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <p>📧 info@techsolutionspro.com</p>
+                    <p>📞 +593 1234567890</p>
+                    <p>📍 UNEMI-MILAGRO</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Síguenos</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="LinkedIn">💼 LinkedIn</a>
+                        <a href="#" aria-label="Twitter">🐦 Twitter</a>
+                        <a href="#" aria-label="GitHub">💻 GitHub</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 TechSolutions Pro. Todos los derechos reservados. | <a href="#" class="footer-link">Política de Privacidad</a> | <a href="#" class="footer-link">Términos de Servicio</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts JavaScript -->
+    <script src="styles/js/navigation.js"></script>
+    <script src="styles/js/form-validation.js"></script>
+    <script src="styles/js/smooth-scroll.js"></script>
+</body>
+</html>
